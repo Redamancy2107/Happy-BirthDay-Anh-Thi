@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Món Quà Bí Mật Cho Ánh Thi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="mode-toggle" title="Chuyển đổi chế độ sáng/tối">🌙</button>
+    <button id="music-btn" title="Phát/tạm dừng nhạc nền">🔇</button>
+
+    <div class="container">
+      <h1>Em có một món quà bí mật dành cho chị<br /></h1>
+      <img src="./assets/img/avatar.jpg" alt="Avatar" class="avatar" />
+
+      <h1>Chị có muốn coi nó hongg 😁<br /></h1>
+
+      <div>
+        <button
+          class="btn"
+          id="open-gift-btn"
+          aria-haspopup="dialog"
+          aria-controls="popup"
+          aria-expanded="false"
+        >
+          Mong đợi quá cho chị coi đi😏
+        </button>
+        <button class="btn" id="exit-btn" aria-haspopup="dialog">
+          Ngại quá hongg nhận đâu 😒
+        </button>
+      </div>
+    </div>
+
+    <div class="popup" id="exit-popup" role="alertdialog" aria-modal="true">
+      <center>
+        <img
+          src="https://i.pinimg.com/736x/32/a5/4d/32a54dc49f2dbd53374f67b025a3d6c4.jpg"
+          alt="Xin lỗi mà"
+        />
+      </center>
+      <h2>Ê giỡn á 😢</h2>
+      <p>Bấm mở coi đi mà, năn nỉ á 🥺</p>
+      <button class="close-btn" id="close-exit-btn">Ok nè😁</button>
+    </div>
+
+    <div
+      class="popup"
+      id="popup"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="popup-title"
+      aria-describedby="popup-desc"
+    >
+      <center>
+        <img
+          src="https://i.pinimg.com/736x/0d/5b/f3/0d5bf3ef087a77846742fa96fa300f07.jpg"
+          alt="Quà sinh nhật"
+        />
+      </center>
+      <h2 id="popup-title">Bất ngờ chưa!</h2>
+      <div id="typing-text" aria-live="polite" aria-atomic="true"></div>
+      <button class="close-btn" id="close-popup-btn">Đóng</button>
+    </div>
+    <canvas id="fireworks"></canvas>
+
+    <audio id="bg-music" autoplay loop>
+      <source src="./assets/music/HPBD.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="main.js"></script>
+  </body>
+</html>
