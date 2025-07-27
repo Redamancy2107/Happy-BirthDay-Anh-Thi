@@ -1,3 +1,3 @@
-# Ê Biết Nay Ngày Gì Không ???
+# Chúc mừng sinh nhật Nguyễn Thuỵ Ánh Thi
 
-![image](https://github.com/user-attachments/assets/afaca4af-c640-4894-b618-463823063ab4)
+![Screenshot](assets\img\review.png)
