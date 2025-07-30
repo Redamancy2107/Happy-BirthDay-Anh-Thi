@@ -16,7 +16,8 @@ body.dark {
   color: #eee;
 }
 .container {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,8 +48,8 @@ h1 {
 }
 
 .avatar {
-  width: 300px;
-  height: 300px;
+  width: 20em;
+  height: 20em;
   border-radius: 50%;
   box-shadow: 0 10px 25px rgba(216, 27, 96, 0.5);
   object-fit: cover;
@@ -90,7 +91,9 @@ body.dark #typing-text {
   cursor: pointer;
   background: #d81b60;
   color: white;
-  margin: 0 12px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 20px;
   box-shadow: 0 6px 15px rgba(216, 27, 96, 0.5);
   transition: background 0.3s, box-shadow 0.3s;
 }

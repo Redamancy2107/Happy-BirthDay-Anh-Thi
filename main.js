@@ -42,29 +42,6 @@ const musicBtn = document.getElementById("music-btn");
 const music = document.getElementById("bg-music");
 let isPlaying = false;
 
-window.addEventListener("load", () => {
-  music.volume = 0.2;
-  const tryPlay = () => {
-    music
-      .play()
-      .then(() => {
-        musicBtn.textContent = "🔊";
-        isPlaying = true;
-      })
-      .catch(() => {
-        musicBtn.textContent = "🔇";
-        isPlaying = false;
-      });
-  };
-
-  tryPlay();
-
-  document.body.addEventListener("click", function once() {
-    if (!isPlaying) tryPlay();
-    document.body.removeEventListener("click", once);
-  });
-});
-
 musicBtn.addEventListener("click", () => {
   if (isPlaying) {
     music.pause();
@@ -135,6 +112,29 @@ setInterval(createFallingEmoji, 350);
 const popup = document.getElementById("popup");
 const openGiftBtn = document.getElementById("open-gift-btn");
 const closePopupBtn = document.getElementById("close-popup-btn");
+
+openGiftBtn.addEventListener("click", () => {
+  music.volume = 0.2;
+  const tryPlay = () => {
+    music
+      .play()
+      .then(() => {
+        musicBtn.textContent = "🔊";
+        isPlaying = true;
+      })
+      .catch(() => {
+        musicBtn.textContent = "🔇";
+        isPlaying = false;
+      });
+  };
+
+  tryPlay();
+
+  document.body.addEventListener("click", function once() {
+    if (!isPlaying) tryPlay();
+    document.body.removeEventListener("click", once);
+  });
+});
 
 openGiftBtn.addEventListener("click", openPopupAndFireworks);
 closePopupBtn.addEventListener("click", () => {
