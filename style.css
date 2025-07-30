@@ -32,7 +32,7 @@ body.dark {
   padding: 1rem;
   position: relative;
   text-align: center;
-  color: rgba(220, 20, 60, 1);
+  color: #d81b60;
 }
 body.dark .container {
   color: #ff80ab;
@@ -40,7 +40,7 @@ body.dark .container {
 
 h1 {
   font-family: "Pacifico", cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 0.3rem;
   animation: pulse 2s infinite;
 }
@@ -280,7 +280,6 @@ body.dark .close-btn:hover {
   vertical-align: middle;
   text-decoration: none;
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
 }
 
 .btn {
@@ -308,7 +307,7 @@ body.dark .close-btn:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: hsl(344, 82%, 87%);
+  background: rgba(220, 20, 60, 1);
   border-radius: inherit;
   -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
   box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
