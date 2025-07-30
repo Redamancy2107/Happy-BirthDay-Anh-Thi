@@ -84,14 +84,14 @@ body.dark #typing-text {
 
 .btn {
   padding: 15px 30px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
   background: #d81b60;
   color: white;
-  margin-top: 20px;
+  margin-top: 1em;
   margin-bottom: 0px;
   margin-left: 20px;
   box-shadow: 0 6px 15px rgba(216, 27, 96, 0.5);
