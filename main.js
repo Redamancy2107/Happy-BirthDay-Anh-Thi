@@ -44,6 +44,7 @@ let isPlaying = false;
 
 musicBtn.addEventListener("click", () => {
   if (isPlaying) {
+    music.volume = 0;
     music.pause();
     musicBtn.textContent = "🔇";
   } else {
