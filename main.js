@@ -47,6 +47,7 @@ musicBtn.addEventListener("click", () => {
     music.pause();
     musicBtn.textContent = "🔇";
   } else {
+    music.volume = 0.2;
     music.play();
     musicBtn.textContent = "🔊";
   }
