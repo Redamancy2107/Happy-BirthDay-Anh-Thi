@@ -56,11 +56,11 @@ musicBtn.addEventListener("click", () => {
 });
 
 const messages = [
-  "Sinh nhật dui dẻ nha bà, quý lắm mới chúc á nha bà! 💝🎂.",
-  "Mong sao tuổi mới bà sẽ mang đến thật nhiều hạnh phúc và sức khỏe dồi dào! 🎉✨.",
-  "Chúc sao cho bà luôn thành công nữa nè, làm gì cũng thuận lợi 🥰🍀.",
-  "Thêm một tuổi mới, chúc sao cho bà luôn dui dẻ bên bạn bè, gia đình và người bà luôn yêu thương 🤗💞.",
-  "Hãy tận hưởng ngày đặc biệt này với thật nhiều niềm vui và tiếng cười nhé! ❤️🎈",
+  "Chúc mừng sinh nhật người bạn siêu thú vị của tui! 💝🎂.",
+  "Chúc chị Thi tuổi mới thật nhiều sức khỏe, luôn mỉm cười rạng rỡ và gặp thật nhiều điều tốt đẹp trong cuộc sống.🎉✨.",
+  "Tuổi mới mong chị luôn mạnh mẽ và hạnh phúc. Đừng quên rằng, dù cuộc sống có ra sao thì chị cũng không bao giờ phải đi một mình.🥰🍀.",
+  "Mong rằng những ước mơ Ánh Thi đang ấp ủ sẽ từng bước trở thành hiện thực, và chị luôn giữ được sự tự tin, bản lĩnh cùng trái tim ấm áp như bây giờ. 🤗💞.",
+  "Chúc chị Thi một năm mới của tuổi mới thật rực rỡ và ý nghĩa!🎉🎂",
 ];
 const typingTextElem = document.getElementById("typing-text");
 let msgIndex = 0;
@@ -77,8 +77,8 @@ function typeMessage() {
     charIndex++;
     typingTimeout = setTimeout(typeMessage, 50);
   } else {
+    typingTextElem.textContent += "\n\n";
     typingTimeout = setTimeout(() => {
-      typingTextElem.textContent += "\n\n";
       msgIndex++;
       charIndex = 0;
       typeMessage();
